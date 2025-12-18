@@ -12,5 +12,5 @@ spring:
     password: 1234567
 
 jwtKeys:
-  privateKeyPath:
-  publicKeyPath:
+  privateKeyPath: jwtKeys/private_key.pem
+  publicKeyPath: jwtKeys/public_key.pem
