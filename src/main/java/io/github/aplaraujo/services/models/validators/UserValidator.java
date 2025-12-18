@@ -23,7 +23,7 @@ public class UserValidator {
             response.setMessage("This field is not valid");
         }
 
-        if (user.getPassword() == null || !user.getPassword().matches("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,16}$")) {
+        if (user.getPassword() == null || !user.getPassword().matches("^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,16}$")) {
             response.setNumOfErrors(response.getNumOfErrors() + 1);
             response.setMessage("The password should have from 8 to 16 characters, at least one number, a capital letter and a lowercase");
         }
