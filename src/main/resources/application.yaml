@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: autorizacao-autenticacao-spring-security-jwt
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+  datasource:
+    url: jdbc:mysql://localhost:3307/security?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrival=true
+    username: root
+    password: 1234567
+
+jwtKeys:
+  privateKeyPath:
+  publicKeyPath:
