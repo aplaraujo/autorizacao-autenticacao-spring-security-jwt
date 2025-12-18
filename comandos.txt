@@ -1,3 +1,7 @@
 openssl genrsa -out private_key.pem 2048 -- chave privada
 
 openssl rsa -pubout -in private_key.pem -out public_key.pem -- chave pública gerada a partir da chave privada
+
+^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$ -- expressão regular para verificação de emails
+
+^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\S+$).{8,}$ -- expressão regular para verificar senhas

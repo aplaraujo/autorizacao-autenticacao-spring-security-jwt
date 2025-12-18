@@ -4,7 +4,7 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: create-drop
     database-platform: org.hibernate.dialect.MySQL8Dialect
   datasource:
     url: jdbc:mysql://localhost:3307/security?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrival=true
